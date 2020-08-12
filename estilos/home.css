@@ -1,0 +1,594 @@
+
+/* ------------------------------- HTML GENERALES -------------------------------- */
+
+html {
+  margin: -1% 0% 0% 0%;
+}
+
+
+/* ------------------------------- BODY GENERALES -------------------------------- */
+
+body {
+  background-color: #fff4fd;
+  color: #110038;
+  font-family: 'Chakra Petch', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  width: 100%; 
+}
+
+
+/* ------------------------------- Cintillo rosado visitantes -------------------------------- */
+
+.upheader {
+  background: linear-gradient(to right, #4180F6, #F7C9F3);
+  box-shadow: 0 1px 0 0 #110038;
+  color: #ffffff;
+  font-size: 0.8vw; 
+  margin: 0%;
+  padding: 0%;
+}
+
+.upheader p {
+  padding: 0.5% 1%; 
+}
+
+
+/* ------------------------------- Navegación -------------------------------- */
+
+.header {
+  width: 100%; 
+}
+
+.header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3vw auto;
+  width: 80%; 
+}
+
+.header .sub-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 0%;
+  width: 100%;
+}
+
+.menu {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo-gif {
+  display: block;
+  height: 4vw;
+}
+
+.logo-gifNight {
+  display: none;
+}
+
+.lista-menu {
+  display: flex;
+  flex-direction: row;
+  margin-right: -8vw;
+  width: 65%;
+}
+
+.lista-menu li {
+  align-items: center; 
+  display: flex;
+  text-decoration: none;
+  width: 60%;
+}
+
+.lista-menu li a {
+  display: flex;
+  text-decoration: none;
+}
+
+.lista-menu li .boton-menu {
+  background-color: #f7c9f3;
+  color: #110038;
+  justify-content: center;
+  width: 100%;
+}
+
+.sub-menu ul li {
+  justify-content: center;
+  margin-right: 3%;
+}
+
+
+/* ------------------------------------- BOTON CREAR GUIFOS ------------------------------------- */
+
+.boton-menu {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  display: flex;
+  font-size: 1.2vw;
+  padding: 4% 4%; 
+  width: 100%;
+}
+
+.boton-menu:hover {
+  background: linear-gradient(to right,#E6BBE2,#E6BBE2);
+}
+
+.selecTema {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  display: flex;
+  flex-direction: row;
+}
+
+.selecTema:hover {
+  background: #E6BBE2;
+}
+
+
+/* ------------------------------------- BOTON ELEGIR TEMA ------------------------------------- */
+
+.boton-menu2 {
+  align-items: center;
+  color: #110038;
+  font-size: 1.2vw;
+  justify-content: center;
+  width: 100%;
+}
+
+.flechaMenu {
+  border-left: 1px solid #110038;
+  box-shadow: inset -0px 0px 0 0 #997D97, inset 1px 0px 0 0 #FFFFFF;
+  height: 96%;
+  justify-content: center;
+  margin: auto;
+  width: 25%;
+}
+
+.flechaMenu img {
+  width: 1vw;
+}
+
+
+/* ------------------------------------- BOTON MIS GUIFOS ------------------------------------- */
+
+.noBoton {
+  display: flex;
+  justify-content: flex-start; 
+}
+
+.sin-bot-menu {
+  color: #110038;
+  font-size: 1.2vw;
+  line-height: 50%;
+  margin-left: -4vw;
+  width: 60%;
+}
+
+.sin-bot-menu:hover {
+  border: 1px dotted #110038;
+  margin-left: -4.5vw;
+  padding: 7% 0% 7% 3%;
+}
+
+
+/* -- ESCOGER MENU -- */
+
+.sub-menu .escogerTemas {
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  color: #ffffff;
+  display: none;
+  flex-direction: column;
+  left: 66.6%;
+  margin-top: 4.3vw;
+  position: absolute;
+  width: 14.4%; 
+}
+
+.escogerTemas .botonTheme {
+  align-content: center;
+  align-items: center;
+  background: #F0F0F0;
+  border-color: #808080;
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  border-style: solid;
+  border-width: 1px;
+  color: #110038;
+  cursor: pointer;
+  display: flex;
+  font-size: 1vw;
+  justify-content: center; 
+  margin: 5% auto;
+  padding: 5%;
+  text-align: center;
+  text-decoration: none;
+  width: 70%;
+}
+
+.botonTheme:hover {
+  border: 1px dotted #110038;
+}
+
+.escogerTemas .botonTheme2 {
+  align-content: center;
+  align-items: center;
+  background: #F0F0F0;
+  border: 1px solid #808080;
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  color: #110038;
+  cursor: pointer;
+  display: flex;
+  font-size: 1vw;
+  justify-content: center; 
+  margin: 5% auto;
+  padding: 5%;
+  text-align: center;
+  text-decoration: none;
+  width: 70%;
+}
+
+.botonTheme2:hover {
+  border: 1px dotted #110038;
+}
+
+/* ------------------------------- 3 Boton y campo para buscar -------------------------------- */
+
+.busqPrinc {
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  margin: 0% auto 0% auto;
+  padding: .2% 0% 1% 0%;
+  width: 80%;
+}
+
+.buscar-gif {
+  background: linear-gradient(to right, #4180F6, #F7C9F3);
+  color: #ffffff;
+  margin-left: .4%;
+  width: 99.2%; 
+}
+
+.buscar-gif p {
+  color: #ffffff; 
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1vw; 
+  margin: auto 0.5%;
+  padding: .5% 0%;
+}
+
+.bus-gris {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  margin: auto;
+  width: 99%;   
+}
+
+.campo-bus {
+  width: 87%;
+}
+
+.campo-bus input {
+  align-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  font-size: 1.2vw;
+  margin: 1% 1% 0% 1%;
+  padding: 1%;
+  width: 96%;
+}
+
+.espacioBoton {
+  background: #E6E6E6;
+  text-decoration: none;
+  width: 13%;
+}
+
+.bus-gris .bot-bus {
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center; 
+  margin: auto;
+  text-align: center;
+  width: 90%;
+}
+
+.bot-bus button {
+  align-content: center;
+  align-items: center;
+  background: #E6E6E6;
+  border-radius: 0.1vw;
+  color: #B4B4B4;
+  cursor: pointer;
+  display: flex;
+  font-family: 'ChakraPetch-Regular', sans-serif;
+  justify-content: center; 
+  margin-top: 10%;
+  padding: 5% 0%;
+  text-align: center;
+}
+
+.bot-bus2 {
+  align-content: center;
+  align-items: center;
+  background: #E6E6E6;
+  border: 1px solid #808080;
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.2vw;
+  justify-content: center; 
+  text-align: center;
+  width: 100%;
+}
+
+
+/* Lupas del botón de búsqueda */
+.bot-bus .lupa-bus {
+  color: #8F8F8F;
+  display: block;
+  height: 1.2vw;
+  margin-right: 10%;
+} 
+
+.lupaG {
+  display: none;
+  height: 1.2vw;
+  margin-right: 10%;
+} 
+
+.lupaBusAc {
+  display: none;
+  height: 1.2vw;
+  margin-right: 10%;
+} 
+
+.lupaBusLi {
+  display: none;
+  height: 1.2vw;
+  margin-right: 10%;
+} 
+
+.escriCampBus {
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  color: #ffffff;
+  display: none;
+  margin: 0% auto 0% 10%;
+  padding-top: .1%;
+  position: absolute;
+  width: 80%;  
+}
+
+.botResBus {
+  background: #F0F0F0;
+  border: 1px solid #808080;
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  color: #110038;
+  cursor: pointer;
+  display: flex;
+  font-size: 1vw;
+  margin: 1% auto 1% 1.5%;
+  padding: .8%;
+  text-decoration: none;
+  width: 83.7%;
+}
+
+.botResBus:hover {
+  background: #E6E6E6;
+  border: 1px dotted #110038;
+}
+
+
+/* ------------------------------- 4 Espacio para las busquedas temporales -------------------------------- */
+
+.busTempo {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 4vw;
+  justify-content: flex-end;
+  margin: 1% auto 1% auto;
+  width: 80%;
+}
+
+.busTem {
+  background-color: #4180F6;
+  border: 1px solid #4C2F99;
+  box-shadow: inset -2px -2px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 1.2vw;
+  letter-spacing: 0;
+  line-height: 120%;
+  margin: .8% 1% 0% 0%;
+  padding: .7%;
+  text-align: center;
+  text-decoration: none;
+  text-justify: auto;
+}
+
+
+/* ------------------------------- 5 Campo Hoy te sugerimos y búsquedas trending -------------------------------- */
+
+.campo-suge {
+  align-content: center;
+  align-items: center;
+  margin: 0% auto 1% auto;
+  text-align: center;
+  width: 82%;
+}
+
+.campo-bus-gif {
+  align-content: center;
+  align-items: center;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  font-size: 1vw; 
+  margin: 1%;
+  padding: 0.7%;
+  width: 96%;
+}
+
+.contenedorTrend {
+  display: grid;
+  gap: 1%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  margin: auto auto 3% auto;
+  width: 80%; 
+}
+
+.contenedorTrend .conteTrend {
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  flex-direction: row;
+  height: 21vw;
+  width: 100%;  
+}
+
+.tituloGif {
+  align-items: center;
+  background: linear-gradient(to right, #4180F6, #F7C9F3);
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  height: 12%;
+  justify-content: space-between;
+  margin: 2% 2% 0% 2%;
+  width: 96%;  
+}
+
+.titleGif {
+  align-items: center;
+  font-size: 1.1vw;
+  line-height: 100%;
+  margin-left: 3%;
+  width: 85%;
+}
+
+.equisCerrar img {
+  height: 1.05vw;
+  margin-left: -30%;
+  top: 0%;
+  width: 1.1vw;
+}
+
+.estilo-gifos {
+  display: grid;
+  gap: 1%;
+  grid-template-columns: 1fr;
+  height: 100%;
+  justify-content: space-between;
+  margin: auto;
+  width: 96%; 
+}
+
+.estilo-gifos img {
+  height: 84%;
+  margin: 1% 0%;
+  width: 100%;  
+}
+
+.estilo-gifos img:hover {
+  border: 1px dotted #110038;
+  height: 83%;
+  width: 99%;  
+}
+
+.verMas {
+  background: #4180F6;
+  border: 1px solid #4C2F99;
+  box-shadow: inset -1px -1px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.2vw;
+  margin: 0% 0% 0% 5%;
+  padding: 3%;
+  position: relative;
+  text-align: center;
+  top: -33%;
+  width: 30%;
+}
+
+.verMas:hover {
+  background: #3A72DB;
+}
+
+
+/* ------------------------------- 6 Campo Tendencias y resultado de busquedas generales -------------------------------- */
+
+.gifYTag {
+  margin: auto;
+  width: 80%;
+}
+
+.estilo-gifos2 {
+  display: grid;
+  gap: .6% 1%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 100%;
+  justify-content: space-between;
+  margin: auto auto 50px auto;
+  width: 100%;  
+}
+
+.estilo-gifos2 img {
+  height: 18vw;
+  margin: 0%;
+  position: relative;
+  width: 100%;   
+  z-index: 1;
+}
+
+.tagResult {
+  align-items: center;
+  color: #ffffff;
+  display: grid;
+  gap: .4vw 1%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 34.9vw;
+  justify-content: space-between;
+  position: absolute;
+  text-align: center;
+  top: 59.4vw;
+  width: 80%;
+  z-index: 3;
+}
+
+.tagResult p {
+  font-size: 90%;
+  padding: 1.5%;
+}
+
+.mostrarTags {
+  color: rgba(0, 0, 255, 0);
+  height: 17.6vw;
+  justify-content: space-between;
+  margin-bottom: -1vw;
+  position: relative;
+  top: -1vw;
+  width: 18.8vw;
+  z-index: 5;
+}
+
+.mostrarTags:hover {
+  background: linear-gradient(to right, #4180F6, #F7C9F3);
+  color: #ffffff;
+  font-size: 1.2vw;
+  height: 1.8vw;
+  top: 4vw;
+}

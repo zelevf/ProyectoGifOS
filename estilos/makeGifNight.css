@@ -1,0 +1,108 @@
+
+/* ------------------------------- Navegación -------------------------------- */
+
+
+body.Night .fas {
+    color: #ffffff;
+    display: flex;
+    position: absolute;
+}
+
+
+/* ------------------------------- Mensaje inicial para crear Gifos -------------------------------- */
+
+body.Night .conteMens .creandoGif {
+    background: #B4B4B4;
+}
+
+body.Night .titBox {
+    background: linear-gradient(to right, #2E32FB, #EE3EFE);
+}
+
+body.Night .botCancelar {
+    background: #B4B4B4;
+}
+
+body.Night .botComenzar {
+    background: #CE36DB;
+    color: #ffffff;
+}
+
+
+/* ------------------------------- Activar la cámara -------------------------------- */
+
+body.Night .conteCama .crearCama {
+background: #B4B4B4;
+}
+
+body.Night .titCama {
+background: linear-gradient(to right, #2E32FB, #EE3EFE);
+}
+
+
+/* ---------------------------- BOTONES --------------------------------- */
+
+body.Night .flechaGrabaci {
+    background: #CE36DB;
+}
+
+body.Night .botonCamara {
+    background: #CE36DB;
+}
+
+body.Night .imgCamara {
+    display: none;
+}
+
+body.Night .imgCamara2 {
+    display: flex;
+}
+
+body.Night .capturar {
+    color: #ffffff;
+}
+
+body.Night .botonRepetir a {
+    background: #B4B4B4;
+}
+
+
+body.Night .botonSubir a {
+    background: #CE36DB;
+    color: #ffffff;
+}
+
+body.Night .botonCancelar {
+    background: #B4B4B4;
+}
+
+
+/* ------------------ Guifo subido con éxito --------------------- */
+
+body.Night .conteMens2 .gifCreado {
+    background: #B4B4B4;
+}
+
+body.Night .titCreado {
+    background: linear-gradient(to right, #2E32FB, #EE3EFE);
+}
+
+body.Night .botoAcci2 .botCopiar {
+    background: #B4B4B4;
+}
+
+body.Night .botoAcci2 .botDescargar {
+    background: #B4B4B4;
+}
+
+body.Night .botoFinGif a {
+    background: #CE36DB;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    width: 15%;
+}

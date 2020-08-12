@@ -1,0 +1,84 @@
+@media (max-width:768px) {
+
+    /* MENU TEMAS  */
+    .sub-menu .escogerTemas {
+        margin-top: 2.5em;
+      }
+
+    /* CAMPO DE BUSQUEDA */
+    .campo-bus {
+        width: 70%;
+    }
+
+    .espacioBoton {
+        width: 30%;
+    }
+    
+    .bot-bus2 {
+        font-size: 1.5vw;
+    }
+
+    .campo-bus input {
+        font-size: 1.8vw;
+        padding: 1.6% 1%;
+    }
+
+    /* Lupas del botón de búsqueda */
+    .bot-bus .lupa-bus {
+        height: 1.5vw;
+    } 
+    
+    .lupaG {
+        height: 1.5vw;
+    } 
+
+    .lupaBusAc {
+        height: 1.5vw;
+    } 
+    
+    .lupaBusLi {
+        height: 1.5vw;
+    } 
+
+
+    /* TREND */
+    .contenedorTrend {
+        display: grid;
+        gap: 1%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contenedorTrend .conteTrend {
+        height: 42vw;
+    }
+
+    .titleGif {
+        font-size: 2.2vw;
+    }
+
+    .equisCerrar img {
+        height: 2.1vw;
+        width: 2.2vw;
+    }
+
+    .verMas {
+        font-size: 2.4vw;
+    }
+
+    /* RESULTADOS DE BUSQUEDA */
+    .estilo-gifos2 {
+        display: grid;
+        gap: .6% 1%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .estilo-gifos2 img {
+        height: 36vw;
+    }
+
+    .tagResult {
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta Content-Type="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>GifOSFernandoVelez</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
+</head>
+
+<body>
+    <div class="upheader">
+        <p>¡Bienvenidos/as a Guifos.com!------Donde los gif están.////// Número de visitas: 12.765.803</p>
+    </div>
+
+    <!-- Navegación  -->
+    <header class="header">
+        <nav class="menu">
+            <div>
+                <a href="index.html"><img src="./imagenes/gifOF_logo.png" alt="logo-gif" class="logo-gif"></a>
+                <a href="index.html"><img src="./imagenes/gifOF_logo_dark.png" alt="logo-gifNight" class="logo-gifNight"></a>
+            </div>
+            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+        </nav>
+    </header>
+
+    <!-- Ventana inicial -->
+    <div class="conteMens" id="conteMens">
+        <div class="creandoGif">
+            <div class="titBox">
+                <div class="mensCrearGuifos" id="">Crear Guifos</div>
+            </div>
+            <div class="conteBox" id="" src="">
+                <div class="imaTitu">
+                    <img src="./imagenes/window img.png" />
+                    <p class="oscura">
+                        Aquí podrás crear tus propios guifos
+                    </p>
+                </div>
+                <div class="textEx">
+                    Crear tu <span class="oscura inclinada">guifo</span> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados.
+                    Los pasos para crear tu guifo son: <br>
+                    <span class="oscura">1)</span> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)<br>
+                    <span class="oscura">2)</span> Capturar tu momento guifo<br>
+                    <span class="oscura">3)</span> Revisar el momento<br>
+                    <span class="oscura">4)</span> Listo para subir y compartir!<br>
+                    ¿Quieres comenzar a crear tu <span class="oscura inclinada">guifo</span> ahora?
+                </div>
+                <div class="botoAcci">
+                    <a href="index.html" class="botCancelar" id="botCancelar">Cancelar</a>
+                    <a href="#" class="botComenzar" id="botComenzar">Comenzar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Segunda ventana - activar cámara -->
+    <div class="conteCama" id="conteCama">
+        <div class="crearCama" id="crearCama">
+            <div class="titCama" id="titCama">
+                <p class="mensChequeo" id="mensChequeo">Un chequeo antes de empezar</p>
+                <a href="crearGuifos.html" class="equisCama" id="equisCama"><img src="./imagenes/close.svg" /></a>
+            </div>
+            <div class="conteImag" id="conteImag" src="">
+                <video class="videoDisplay" id="videoDisplay"></video>
+                <canvas class="miCanvas" id="miCanvas" width="640" height="480" src=""></canvas>
+                <img class="video2" id="videoDisplay2" cover=""></img>
+                <div class="subirGuifo" id="subirGuifo">
+                    <div class="subiendoGuifo">
+                        <img src="./imagenes/globe_img.png" />
+                    </div>
+                    <div class="subiendoGif oscura">
+                        <p>Estamos subiendo tu guifo…</p>
+                    </div>
+                    <div class="container">
+                        <div class="progressContainer">
+                            <div value="0" max="100" class="progress" id="progress"></div>
+                        </div>
+                    </div>
+                    <div class="restanteGif">
+                        <p>Tiempo restante: <del>38 años</del> algunos minutos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="botonesC">
+                <div class="contadCama" id="contadCama">
+                    <p class="minutos" id="minutos"></p>
+                    <p>:</p>
+                    <p class="segundos" id="segundos"></p>
+                </div>
+                <a href="#" alt="play gif" class="flechaGrabaci" id="flechaGrabaci"><img src="./imagenes/forward.svg"/></a>
+                <div class="botonCamara" id="activarCamara">
+                    <a href="#crearGuifos.html" class="imgCamara"><img src="./imagenes/camera.svg" /></a>
+                    <a href="#crearGuifos.html" class="imgCamara2"><img src="./imagenes/camera_light.svg" /></a>
+                    <a href="#crearCama" class="capturar">Capturar</a>
+                </div>
+                <div class="botonCamara2" id="pararCamara">
+                    <a href="#" class="imgRecording"><img src="./imagenes/recording.svg" /></a>
+                    <a href="#crearCama" class="listo">Listo</a>
+                </div>
+                <div class="repetirSubir" id="repetirSubir">
+                    <div class="botonRepetir" id="botonRepetir">
+                        <a href="#" class="repetirCaptura">Repetir Captura</a>
+                    </div>
+                    <div class="botonSubir" id="botonSubir">
+                        <a href="#crearCama" class="subirGuifo">Subir Guifo</a>
+                    </div>
+                </div>
+                <div class="botonCancelar" id="botonCancelarGif">
+                    <a href="#conteCama" class="cancelarCaptura">Cancelar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ventana final - Guifo subido con éxito -->
+    <div class="conteMens2" id="conteMens2" onload="guifoListo()">
+        <div class="gifCreado">
+            <div class="titCreado">
+                <span class="mensCrearGuifos oscura">Guifo subido con éxito</span>
+                <a href="#" class="equisCama" id="equisCama2"><img src="./imagenes/close.svg" /></a>
+            </div>
+            <div class="creadoComp">
+                <img class="video3" id="videoDisplay3" src=""></img>
+                <div class="guifoCreadoExito">
+                    <div class="guifCreaTitu">
+                        <p> Guifo creado con éxito</p>
+                    </div>
+                    <div class="botoAcci2">
+                        <a href="#crearGuifos.html" class="botCopiar" data-clipboard-action="copy" id="botCopiar">Copiar enlace Guifo</a>
+                        <a href="" download="" class="botDescargar" id="botDescargar">Descargar Guifo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="botoFinGif" id="botoFinGif">
+                <a href="crearGuifos.html" class="botoFinGifA" id="botoFinGifA">Listo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mis gifos creados -->
+    <div class="uno" id="uno">
+        <div class="campo-suge">
+            <input type="text" name="nombre" class="campo-bus-gif" placeholder="Mis guifos:">
+        </div>
+        <div class="misGuifosCreados" id="misGuifosCreados">
+        </div>
+    </div>
+
+    <script src="crearGuifos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+ 
+/* ------------------------------- BODY GENERALES -------------------------------- */
+
+body.Night {
+background-color: #120235;
+color: #110038;
+}
+
+
+/* ------------------------------- Cintillo rosado visitantes -------------------------------- */
+
+body.Night .upheader {
+background: linear-gradient(to right, #2E32FB, #EE3EFE);
+}
+
+
+/* ------------------------------- Navegación -------------------------------- */
+
+body.Night .logo-gif {
+display: none;
+}
+
+body.Night .logo-gifNight {
+display: block;
+height: 4vw;
+}
+
+body.Night .lista-menu li .boton-menu {
+background: #EE3EFE;
+border: 1px solid #110038;
+box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+color: #FFFFFF;
+}
+
+body.Night .lista-menu li .boton-menu:hover {
+background: #CE36DB;
+border: 1px solid #110038;
+box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+color: #ffffff;
+width: 100%;
+}
+
+
+/* ------------------------------------- BOTON CREAR GUIFOS ------------------------------------- */
+
+body.Night .selecTema {
+background: #EE3EFE;
+box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+color: #FFFFFF;
+}
+
+body.Night .selecTema:hover {
+background: #CE36DB;
+}
+
+
+/* ------------------------------------- BOTON ELEGIR TEMA ------------------------------------- */
+
+body.Night .boton-menu2 {
+color: #ffffff;
+height: 100%;
+}
+
+
+/* ------------------------------------- BOTON MIS GUIFOS ------------------------------------- */
+
+body.Night .sin-bot-menu {
+color: #FFFFFF ;
+}
+
+body.Night .sin-bot-menu:hover {
+border: 1px dotted #ffffff;
+}
+
+
+/* -- ESCOGER MENU -- */
+
+body.Night .sub-menu .escogerTemas {
+background: #B4B4B4;
+box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+body.Night .escogerTemas .botonTheme {
+background: #B4B4B4;
+box-shadow: inset -1px -1px 0 0 #8F8F8F, inset 1px 1px 0 0 #FFFFFF;
+}
+
+body.Night .escogerTemas .botonTheme2 {
+background: #2E32FB;
+border: 1px solid rgba(51,53,143,0.20);
+box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+color: #ffffff;
+}
+
+body.Night .botonTheme2:hover {
+border: 1px dotted #ffffff;
+}
+
+/* ------------------------------- 3 Boton y campo para buscar -------------------------------- */
+
+body.Night .busqPrinc {
+background: #B4B4B4;
+box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+body.Night .buscar-gif {
+background: linear-gradient(to right, #2E32FB, #EE3EFE);
+}
+
+body.Night .espacioBoton {
+background: #B4B4B4;
+}
+
+body.Night .bot-bus button {
+background: #B4B4B4;
+color: #808080;
+}
+
+body.Night .bot-bus2 {
+background: #B4B4B4;
+border: 1px solid #808080;
+box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+color: #8F8F8F;
+}
+
+
+/* Lupas del botón de búsqueda */
+body.Night .bot-bus .lupa-bus {
+display: none;
+} 
+
+body.Night .lupaG {
+display: block;
+} 
+
+body.Night .lupaBusLi {
+display: none;
+} 
+
+body.Night .escriCampBus {
+background: #B4B4B4;
+box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+
+body.Night .botResBus {
+background: #CCCCCC;
+}
+
+body.Night .botResBus:hover {
+background: #B4B4B4;
+}
+
+
+/* ------------------------------- 4 Espacio para las busquedas temporales -------------------------------- */
+
+body.Night .busTem {
+background-color: #2124B3;
+}
+
+
+/* ------------------------------- 5 Campo Hoy te sugerimos y búsquedas trending -------------------------------- */
+
+body.Night .contenedorTrend .conteTrend {
+background: #B4B4B4;
+box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+
+body.Night .tituloGif {
+background: linear-gradient(to right, #2E32FB, #EE3EFE);
+}
+
+body.Night .verMas {
+background: #2E32FB;
+box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+}
+
+body.Night .verMas:hover {
+background: #2629CC;
+}
+
+
+/* ------------------------------- 6 Campo Tendencias y resultado de busquedas generales -------------------------------- */
+
+body.Night .mostrarTags:hover {
+background: linear-gradient(to right, #2E32FB, #EE3EFE);
+}

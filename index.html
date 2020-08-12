@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GifOSFernandoVelez</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div class="upheader">
+        <p>¡Bienvenidos/as a Guifos.com!------Donde los gif están.////// Número de visitas: 12.765.803</p>
+    </div>
+
+    <!-- Navegación  -->
+    <header class="header">
+        <nav class="menu">
+            <div class="divLogo" id="divLogo">
+                <img src="./imagenes/gifOF_logo.png" alt="logo-gif" class="logo-gif">
+                <img src="./imagenes/gifOF_logo_dark.png" alt="logo-gifNight" class="logo-gifNight">
+            </div>
+            <div class="sub-menu" id="sub-menu">
+                <ul class="lista-menu">
+                    <li><a href="crearGuifos.html" class="boton-menu" id="crearGuifosBot">Crear Guifos</a></li>
+                    <li class="selecTema" id="selecTema">
+                        <a href="#" class="boton-menu2">Elegir tema</a>
+                        <a href="#" alt="desplegar menu temas" class="flechaMenu" ><img src="./imagenes/dropdown.svg"/></a>
+                    </li>
+                    <li class="noBoton"><a href="crearGuifos.html#misGuifosCreados" class="sin-bot-menu"><u>M</u>is Guifos</a></li>
+                </ul> 
+                <div class="escogerTemas" id="botonTemas">
+                    <a href="#" class="botonTheme" id="sailorDay">Sailor Day</a>
+                    <a href="#" class="botonTheme2" id="sailorNight">Sailor Night</a>
+                </div>
+            </div>
+        </nav>
+
+    </header> 
+
+    <!-- Campo de búsqueda y botón -->
+    <div class="busqPrinc">
+        <div class="buscar-gif"><p>Buscar</p></div>
+        <div class="bus-gris">
+            <div class="campo-bus">
+                <input type="text" name="nombre" id="campo-bus-gif" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" onkeydown="enter(event)">
+            </div>
+
+            <a href="#campRes" class="espacioBoton">
+                <div class="bot-bus">
+                    <button class="bot-bus2" id="botonbusqueda"><img src="./imagenes/lupa_inactive.svg" alt="buscar con lupa" class="lupa-bus" id="lupaBus"/><img src="./imagenes/lupa_g.svg" alt="buscar con lupa" class="lupaG" id="lupaG"/><img src="./imagenes/lupa.svg" alt="buscar con lupa" class="lupaBusAc" id="lupaBusAc"/><img src="./imagenes/lupa_light.svg" alt="buscar con lupa" class="lupaBusLi" id="lupaBusLi"/>Buscar</button>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="escriCampBus" id="escriCampBus">
+        <a href="#" class="botResBus" id="masBuscados1">Palabra más buscada</a>
+        <a href="#" class="botResBus" id="masBuscados2">Segunda palabra más buscada</a>
+        <a href="#" class="botResBus" id="masBuscados3">Tercera palabra más buscada</a>
+    </div>
+
+    <!-- Búsquedas temporales -->
+    <div class="busTempo" id="busTem"></div>
+
+    <!-- Búsquedas trending -->
+    <div class="uno">
+        <div class="campo-suge">
+            <input type="text" name="nombre" class="campo-bus-gif" placeholder="Hoy te sugerimos:">
+        </div>
+        <div class="contenedorTrend">
+            <div  class="conteTrend">
+                <div class="tituloGif">
+                    <div class="titleGif" id="titleGif1"></div>
+                    <div class="equisCerrar cerrando1" id="equisCERRAR"><a href="#"><img src="./imagenes/close.svg"/></a></div> 
+                </div>
+                <div class="estilo-gifos" id="sugerencias1" src=""></div>
+                <div class="verMas" id="verMas1">Ver más...</div>
+            </div>
+            <div  class="conteTrend">
+                <div class="tituloGif">
+                    <div class="titleGif" id="titleGif2"></div>
+                    <div class="equisCerrar cerrando2" id="equisCERRAR"><img src="./imagenes/close.svg"/></div> 
+                </div>
+                <div class="estilo-gifos" id="sugerencias2" src=""></div>
+                <div class="verMas" id="verMas2">Ver más...</div>
+            </div>
+            <div  class="conteTrend">
+                <div class="tituloGif">
+                    <div class="titleGif" id="titleGif3"></div>
+                    <div class="equisCerrar cerrando3" id="equisCERRAR"><img src="./imagenes/close.svg"/></div> 
+                </div>
+                <div class="estilo-gifos" id="sugerencias3" src=""></div>
+                <div class="verMas" id="verMas3">Ver más...</div>
+            </div>
+            <div  class="conteTrend">
+                <div class="tituloGif">
+                    <div class="titleGif" id="titleGif4"></div>
+                    <div class="equisCerrar cerrando4" id="equisCERRAR"><img src="./imagenes/close.svg"/></div> 
+                </div>
+                <div class="estilo-gifos" id="sugerencias4" src=""></div>
+                <div class="verMas" id="verMas4">Ver más...</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Resultado de búsquedas -->
+    <div class="resultadosBUS">
+        <div class="campo-suge">
+            <input type="text" name="nombre" class="campo-bus-gif" id="campRes" placeholder="Tendencias:">
+        </div>
+        <div class="gifYTag">
+            <div class="estilo-gifos2" id="result1"></div>
+            <div class="tagResult" id="tagResult"></div>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
