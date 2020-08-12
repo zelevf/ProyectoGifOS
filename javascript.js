@@ -1,10 +1,3 @@
-// FALTA 
-// QUE EL MENU DE TEMAS NO SE MUEVA DE MANERA IRREGULAR, IGUALARLO AL DE LAS BUSQUEDAS MUNDIALES
-// QUE SI TE SALES DEL MENU TEMAS O DE ESE BOTON SE VAYA EL MENU 
-// CAMBIAR TODO A MOBILE (OPCIONAL)
-// BARRA DE PROGRESS BAR (OPCIONAL)
-
-
 
 // ------------------------------ APIS ---------------------------------------
 
@@ -320,6 +313,7 @@ document.getElementById('verMas4').addEventListener(('click'), function(e) {
     console.log('Aprete el boton Ver mas del trend 4');
 });
 
+
 //  --------------- ELIMINAR LA BUSQUEDA CON LA X DE LOS TREND ----------------------------
 
 function borrarBusqueda() {
@@ -423,16 +417,6 @@ botonSailorDay.addEventListener('click', () => {
 
 
 botonSailorNight.addEventListener('click', () => {
-    // CAmbiar el LOGO 
-    // let logoNight = document.createElement('img');
-    // logoNight.alt = 'logo-gifNight';
-    // logoNight.className = 'logo-gifNight';
-    // logoNight.src = './imagenes/gifOF_logo_dark.png';
-    // // logoNight.appendChild('logoDiv');
-    // let logoDay = document.querySelector('#logo-gif');
-    // let noche = document.querySelector('#divLogo');
-    // noche.replaceChild(logoNight, logoDay);
-
     document.body.classList.add('Night');
     console.log('Pasamos a tema noche');
     const botonB = document.getElementById('botonbusqueda');
@@ -498,7 +482,6 @@ function busquTempor() {
 
 //  ------------------------- EFECTOS DE BUSQUEDAS GENERALES -------------------------------
 
-// Cambiar el campo donde dice tendencias por la palabra escrita 
 function cambiaPlaceHolder() {   
     let newCampo = document.getElementById('campRes');
     newCampo.value = document.getElementById('campo-bus-gif').value.trim();
