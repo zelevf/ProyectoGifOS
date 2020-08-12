@@ -305,7 +305,7 @@ body {
   width: 90%;
 }
 
-.bot-bus button {
+.bot-bus .bot-bus2 {
   align-content: center;
   align-items: center;
   background: #E6E6E6;
@@ -481,6 +481,7 @@ body {
 }
 
 .equisCerrar img {
+  cursor: pointer;
   height: 1.05vw;
   margin-left: -30%;
   top: 0%;
