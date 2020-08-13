@@ -674,11 +674,10 @@ body {
 
 
 
-progress.progress {
+.progress {
   /* display: none; */
   background-color: #F7C9F3;
   height: 2vw;
   justify-content: center;
-  width: 100%;
-  /* padding-top: -10000px; */
+  width: 0%;
 } 
