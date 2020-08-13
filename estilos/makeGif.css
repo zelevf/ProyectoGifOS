@@ -670,14 +670,28 @@ body {
   justify-content: center;
   margin-left: 0vw;
   width: 100%;
+  text-align: left;
 }
 
+progress {
+  height: 2.6vw; 
+  width: 0%; 
+  border-radius: 9px; 
+  justify-content: left;
+  text-align: left;
+}
 
-
-.progress {
-  /* display: none; */
+progress::-webkit-progress-bar { 
   background-color: #F7C9F3;
-  height: 2vw;
-  justify-content: center;
-  width: 0%;
-} 
+  height: 2vw; 
+}
+
+progress::-webkit-progress-value { 
+  background-color: #F7C9F3;
+  height: 2vw; 
+}
+
+progress::-moz-progress-bar { 
+  background-color: #F7C9F3;
+  height: 2vw; 
+}
