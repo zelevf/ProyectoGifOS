@@ -251,7 +251,7 @@ body {
 }
 
 .subirGuifo {
-  /* display: none; */
+  display: none;
   flex-direction: column;
   padding: 18% 0% 10% 0%;
 }
