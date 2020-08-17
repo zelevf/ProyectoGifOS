@@ -110,7 +110,6 @@ function cameraOff() {
 
         miCanvas.style.display = 'none'; 
         video2.style.display = 'flex'; 
-        console.log('Play al Gif');
         e.preventDefault();
     });    
 }
@@ -328,10 +327,8 @@ document.getElementById('botoFinGif').addEventListener('click', function(e) {
 });
 
 let linkGIF;
-// console.log(linkGIF);
 // 6to PASO ACCION - COPIAR EL ENLACE DEL GIF
 document.getElementById('botCopiar').addEventListener('click', function(e) {
-    console.log('Se copió el link del GIF');
     copiarGIF();
     e.preventDefault();
 });
@@ -360,7 +357,6 @@ document.getElementById('equisCama2').addEventListener('click', function(e) {
 // // ----------------------------------------------------------------------------------------
 
 function progressBar() {
-    console.log(archivoListo)
     const el = document.getElementById('progress');
     let width = 1;
     let id = setInterval(frame, 120);
@@ -405,7 +401,6 @@ function subirGIFO() {
                 const getGif = "https://api.giphy.com/v1/gifs/";
                 const APIK = "?api_key=PTJUhPR1gtl2Ngf90oeI6cjoJo4immck";
                 linkGIF = gifID;
-                console.log(linkGIF);
                 fetch(`${getGif}${gifID}${APIK}`)
                 .then(response => response.json())
                 .then(data => {
@@ -413,7 +408,6 @@ function subirGIFO() {
                 })
             });
         } else {
-            console.log('Respuesta de red no OK.');
         }
     })
     .catch(function(error) {

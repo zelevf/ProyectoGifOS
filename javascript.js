@@ -2,6 +2,7 @@
 // ------------------------------ APIS ---------------------------------------
 
 const apiTrend = 'https://api.giphy.com/v1/gifs/trending?api_key=PTJUhPR1gtl2Ngf90oeI6cjoJo4immck&limit=4&rating=G';
+const apiTrend2 = 'https://api.giphy.com/v1/gifs/trending?api_key=PTJUhPR1gtl2Ngf90oeI6cjoJo4immck&rating=G';
 const endpointTrendingSearch = "https://api.giphy.com/v1/trending/searches?api_key=PTJUhPR1gtl2Ngf90oeI6cjoJo4immck";
 
 
@@ -144,6 +145,70 @@ document.getElementById('masBuscados3').addEventListener(('click'), function(e) 
     masBuscado3();
 });
 
+// -------------------------------------------------------------------------------------------
+
+function cargaTendencias() {
+    const tendencias = fetch(apiTrend2)
+
+        .then(response => {
+            return response.json()
+        })
+        .then(data => {
+            const limpiar = document.getElementById('tendencias');
+            limpiar.innerHTML = '';
+
+            for(let i = 4; i < data.data.length - 1; i++) {
+                let result = document.getElementById('tendencias');
+                let img = document.createElement('img');
+                img.id = 'imgTendencia'; 
+                img.src = data.data[i].images.downsized_large.url;
+                result.appendChild(img);
+            }
+
+            for (let i = 4; i < data.data.length; i++) {
+                let newArray = (`${data.data[i].slug}`),
+                separador = '-',
+                limite = 3,
+                newTitle = newArray.split(separador, limite);
+                newTitle.pop();             
+                
+                let tags = document.createElement('p');
+                tags.className = 'mostrarTags';  
+                tags.textContent = '#' + newTitle.join(' #');
+
+                document.querySelector('#tagResult').appendChild(tags);
+            } 
+
+
+        })
+        .catch(error => {
+            return error;
+        })
+    return tendencias
+};
+
+function ocultarTendencias() {
+    const limpiar = document.getElementById('tendencias');
+    limpiar.innerHTML = '';
+}
+
+function mostrarTendencias() {
+    let newCampo = document.getElementById('campRes');
+
+    if (newCampo.value == 0) {
+        cargaTendencias();
+    } else {
+        ocultarTendencias();
+    }
+}
+mostrarTendencias();
+
+
+
+
+
+
+
 
 
 // -------------------------------------------------------------------------------------------
@@ -234,7 +299,6 @@ function verMas1() {
 
 document.getElementById('verMas1').addEventListener(('click'), function(e) {
     verMas1();
-    console.log('Aprete el boton Ver mas del trend 1');
 });
 
 
@@ -260,7 +324,6 @@ function verMas2() {
 
 document.getElementById('verMas2').addEventListener(('click'), function(e) {
     verMas2();
-    console.log('Aprete el boton Ver mas del trend 2');
 });
 
 
@@ -285,7 +348,6 @@ function verMas3() {
 
 document.getElementById('verMas3').addEventListener(('click'), function(e) {
     verMas3();
-    console.log('Aprete el boton Ver mas del trend 3');
 });
 
 
@@ -310,7 +372,6 @@ function verMas4() {
 
 document.getElementById('verMas4').addEventListener(('click'), function(e) {
     verMas4();
-    console.log('Aprete el boton Ver mas del trend 4');
 });
 
 
@@ -391,13 +452,11 @@ const campEscri = document.getElementById('campo-bus-gif');
 botonSailorDay.addEventListener('click', () => {
     // ELIMINAMOS DEL LOCAL STORAGE  
     localStorage.removeItem('Tema-Night');
-    console.log('Pasamos a tema día');
     const botonB = document.getElementById('botonbusqueda');
     const vacio = '';
 
     if (campEscri.value != vacio) {
         document.body.classList.remove('Night');
-        console.log('No está vacío');
         botonB.style.backgroundColor = '#F7C9F3'; 
         botonB.style.color = '#110038';
         lupaBusLi.style.display = 'none';
@@ -411,14 +470,12 @@ botonSailorDay.addEventListener('click', () => {
         lupaG.style.display = 'none'; 
         lupaBus.style.display = 'block';
         lupaBusLi.style.display = 'none'; 
-        console.log('Está vacío');
     }
 });
 
 
 botonSailorNight.addEventListener('click', () => {
     document.body.classList.add('Night');
-    console.log('Pasamos a tema noche');
     const botonB = document.getElementById('botonbusqueda');
     const vacio = '';
     botonB.style.backgroundColor = '#B4B4B4'; 
@@ -432,9 +489,7 @@ botonSailorNight.addEventListener('click', () => {
         botonB.style.color = '#ffffff'; 
         lupaBusLi.style.display = 'block'; 
         lupaG.style.display = 'none'; 
-        console.log('No está vacío');
     } else {
-        console.log('Está vacío');
     }
 
 
@@ -485,6 +540,7 @@ function busquTempor() {
 function cambiaPlaceHolder() {   
     let newCampo = document.getElementById('campRes');
     newCampo.value = document.getElementById('campo-bus-gif').value.trim();
+    mostrarTendencias();
 }
 
 
@@ -508,8 +564,6 @@ function conectarGiff() {
             return response.json()
         })
         .then(contenidos => {
-            console.log(contenidos.data);
-
             const limpiar = document.getElementById('result1');
             limpiar.innerHTML = '';
 
@@ -564,9 +618,7 @@ document.getElementById('botonbusqueda').addEventListener(('click'), function(e)
         lupaBus.style.display = 'none';  
         lupaBusLi.style.display = 'none';  
         lupaG.style.display = 'block'; 
-        console.log('Noche True');
     } else {
-        console.log('Noche False');
     }
 });
 
