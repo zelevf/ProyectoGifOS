@@ -6,4 +6,4 @@ El proyecto está basado en la creación de una aplicación web interactiva, en 
 
 Fue utilizado HTML, CSS y JavaScript para su producción.
 
-https://zelevf.github.io/proyectogifos/
+https://zelevf.github.io/ProyectoGifOS/
