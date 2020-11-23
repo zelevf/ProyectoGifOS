@@ -23,6 +23,10 @@
         padding: 1.6% 1%;
     }
 
+    .bot-bus .bot-bus2 {
+        margin-top: 3%;
+      }
+
     /* Lupas del botón de búsqueda */
     .bot-bus .lupa-bus {
         height: 1.5vw;
